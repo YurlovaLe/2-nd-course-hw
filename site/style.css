@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.centre {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background-image: url(img/top.jpg);
+  height: 1024px;
+}
+.header__heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  padding-top: 218px;
+  padding-bottom: 32px;
+}
+.header__text {
+  max-width: 481px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 44px;
+}
+.header__buton {
+  width: 234.06px;
+  height: 48.6px;
+  left: 120px;
+  top: 482.11px;
+  background: #9C0332;
+  border: none;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.games {
+  display: flex;
+  gap: 32px;
+  background-color: #000915;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.games__all {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.games__game {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+.games__game_wow {
+  background-image: url(img/game1.png);
+}
+.games__game_dota {
+  background-image: url(img/game2.png);
+}
+.games__game_lol {
+  background-image: url(img/game3.png);
+}
+
+@media (max-width: 767px) {
+  .centre {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: url(img/top_mobile.jpg);
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__heading {
+    font-size: 32px;
+    line-height: 39px;
+    padding-top: 238px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .header__buton {
+    left: 70.47px;
+    top: 447.7px;
+  }
+  .games {
+    flex-direction: column;
+  }
+  .games__all {
+    width: 343px;
+  }
+}/*# sourceMappingURL=style.css.map */
