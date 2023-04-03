@@ -90,40 +90,4 @@ a {
 }
 .games__game_lol {
   background-image: url(img/game3.png);
-}
-
-@media (max-width: 767px) {
-  .centre {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .header {
-    background-image: url(img/top_mobile.jpg);
-    height: 735px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header__heading {
-    font-size: 32px;
-    line-height: 39px;
-    padding-top: 238px;
-    text-align: center;
-  }
-  .header__text {
-    font-size: 14px;
-    line-height: 22px;
-    padding-bottom: 32px;
-    text-align: center;
-  }
-  .header__buton {
-    left: 70.47px;
-    top: 447.7px;
-  }
-  .games {
-    flex-direction: column;
-  }
-  .games__all {
-    width: 343px;
-  }
 }/*# sourceMappingURL=style.css.map */
