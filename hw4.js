@@ -14,3 +14,17 @@ for (let a = 1; a <= 5; a++) {
 for (let b = 7; b <= 22; b++) {
   console.log(b);
 }
+
+//Задание 4
+const obj = {
+  'Коля':'200',
+  'Вася':'300',
+  'Петя':'400'
+};
+for (let salary in obj) {
+  console.log(`${salary} - зарплата ${obj[salary]}`);
+}
+
+
+
+
