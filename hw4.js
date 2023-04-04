@@ -32,7 +32,12 @@ for (let n = 1000; n >= 50; num++) {
 }
 console.log(num);
 
-
-
+//Задание 6
+let firstFriday = 4;
+for (let dayMonth = 1; dayMonth < 32; dayMonth++) {
+  if ((dayMonth - firstFriday) % 7 == 0) {
+    console.log(`Сегодня пятница, ${dayMonth}-е число. Необходимо подготовить отчет.`);
+  }
+}
 
 
