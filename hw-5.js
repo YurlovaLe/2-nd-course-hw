@@ -75,3 +75,29 @@ function cubeNumber(c = Number(prompt("Введите число"))) {
 }
 
  cubeNumber();
+
+ //Задание 7
+
+function getCirclArea() {
+  return Math.PI * this.radius ** 2; 
+}
+function getCirclPerimeter() {
+  return 2 * Math.PI * this.radius;
+}
+
+ const circl1 = {
+  radius: 5,
+  getArea: getCirclArea,
+  getPerimeter: getCirclPerimeter
+ }
+
+ const circl2 = {
+  radius: 7,
+  getArea: getCirclArea,
+  getPerimeter: getCirclPerimeter
+ }
+
+ console.log(circl1.getArea());
+ console.log(circl1.getPerimeter());
+ console.log(circl2.getArea());
+ console.log(circl2.getPerimeter());
