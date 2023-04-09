@@ -51,3 +51,15 @@ function salutation(age = prompt("Введите свой возраст")) {
 }
 
 salutation();
+
+//Задание 5
+
+function mult(f, g) {
+  if (isNaN(f) || isNaN(g)) {
+    console.log ('Одно или оба значения не являются числом');
+  } else {
+    return f * g;
+  }
+}
+
+mult(4,5);
