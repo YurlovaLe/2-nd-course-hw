@@ -63,3 +63,15 @@ function mult(f, g) {
 }
 
 mult(4,5);
+
+//Задание 6
+
+function cubeNumber(c = Number(prompt("Введите число"))) {
+  if (isNaN(c)) {
+    console.log("Переданный параметр не является числом");
+  } else {
+    console.log(`${c} в кубе равняется ${c**3}`);
+  }
+}
+
+ cubeNumber();
