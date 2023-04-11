@@ -15,6 +15,7 @@ a {
 .centre {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  background-color: #000915;
 }
 
 .header {
@@ -41,7 +42,8 @@ a {
   color: #FFFFFF;
   padding-bottom: 44px;
 }
-.header__buton {
+
+.button {
   width: 234.06px;
   height: 48.6px;
   left: 120px;
@@ -55,6 +57,9 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+}
+.button:hover {
+  background-color: #EB443F;
 }
 
 .games {
@@ -72,7 +77,10 @@ a {
   align-items: flex-end;
   justify-content: flex-start;
 }
-.games__game {
+.games__all:hover {
+  border: 3px solid #44D2FF;
+}
+.games__name {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -82,14 +90,78 @@ a {
   padding-bottom: 32px;
   padding-left: 32px;
 }
-.games__game_wow {
+.games__seasons {
   background-image: url(img/game1.png);
 }
-.games__game_dota {
+.games__remember-words {
   background-image: url(img/game2.png);
 }
-.games__game_lol {
+.games__puzzles {
   background-image: url(img/game3.png);
+}
+
+.game {
+  height: 800px;
+}
+.game__header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__about {
+  max-width: 584px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 44px;
+  padding-top: 32px;
+}
+
+.seasons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seasons__about_mob {
+  display: none;
+}
+
+.remember-words {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.puzzles {
+  background-image: url(img/bg_puzzles.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.puzzles__about {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.footer {
+  height: 80px;
+  border: 1px solid rgba(184, 212, 255, 0.2);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
 }
 
 @media (max-width: 767px) {
@@ -116,7 +188,7 @@ a {
     padding-bottom: 32px;
     text-align: center;
   }
-  .header__buton {
+  .button {
     left: 70.47px;
     top: 447.7px;
   }
@@ -125,5 +197,51 @@ a {
   }
   .games__all {
     width: 343px;
+  }
+  .game {
+    flex-direction: column;
+  }
+  .game__header {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__about {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__img {
+    width: 344px;
+  }
+  .seasons {
+    height: 654px;
+    text-align: center;
+  }
+  .seasons__left {
+    padding-top: 51px;
+  }
+  .seasons__right {
+    padding-bottom: 85px;
+  }
+  .seasons__about {
+    display: none;
+  }
+  .seasons__about_mob {
+    display: block;
+  }
+  .remember-words {
+    height: 654px;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .remember-words__right {
+    padding-top: 51px;
+  }
+  .remember-words__left {
+    padding-bottom: 90px;
+  }
+  .puzzles {
+    height: 737px;
+    justify-content: flex-start;
+    padding-top: 51px;
   }
 }/*# sourceMappingURL=style.css.map */

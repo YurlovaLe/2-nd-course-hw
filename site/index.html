@@ -7,17 +7,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Homework1</title>
+  <script src="index.js"></script>
 </head>
 <body>
   <header class="header centre">
     <h1 class="header__heading">Добро пожаловать <br> на мой сайт!</h1>
     <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
-    <button class="header__buton">Поехали!</button>
+    <button class="button">Поехали!</button>
   </header>
 <section class="games centre">
-  <div class="games__game_wow games__all"><a class="games__game" href="#">Игра 1</a></div>
-  <div class="games__game_dota games__all"><a class="games__game" href="#">Игра 2</a></div>
-  <div class="games__game_lol games__all"><a class="games__game" href="#">Игра 3</a></div>
+  <a href="#seasons">
+    <div class="games__seasons games__all"><p class="games__name">Игра 1</p></div>
+  </a>
+  <a href="#remember-words">
+    <div class="games__remember-words games__all"><p class="games__name">Игра 2</p></div>
+  </a> 
+  <a href="#puzzles">
+    <div class="games__puzzles games__all"><p class="games__name">Игра 3</p></div>
+  </a>
 </section>
+<div class="centre">
+  <div class="seasons game" id="seasons">
+    <div class="seasons__left">
+      <h2 class="game__header">Времена года</h2>
+      <p class="game__about seasons__about">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
+      <p class="game__about seasons__about_mob">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и приступай</p>
+      <button class="button" onclick="seasonsGame()">Поехали!</button>
+    </div>
+    <div class="seasons__right">
+      <img class="game__img" src="img/seasons.png" alt="Времена года">
+    </div>
+  </div>
+  <div class="remember-words game" id="remember-words">
+    <div class="remember-words__left">
+      <img class="game__img" src="img/remember_words.png" alt="Запомни слова">
+    </div>
+    <div class="remember-words__right">
+      <h2 class="game__header">Запомни слова</h2>
+      <p class="game__about">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+      <button class="button">Играть</button>
+    </div>
+  </div>
+  <div class="puzzles game" id="puzzles">
+    <h2 class="game__header">Игра в загадки</h2>
+    <p class="game__about puzzles__about">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</b></p>
+    <button class="button">Играть!</button>
+  </div>
+</div>
+<footer>
+  <p class="footer centre">Все права защищены</p>
+</footer>
 </body>
 </html>
