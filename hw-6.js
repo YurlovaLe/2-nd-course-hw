@@ -23,3 +23,17 @@ const a = [1, 3, 5, 10, 20];
 
 let b = a.join(' ');
 console.log(b);
+
+//Задание 4
+
+let e = [];
+
+for (let j = 0; j < 3; j++) {
+  e[j] = [ ];
+
+  for (let i = 0; i < 3; i++) {
+    e[j].push(1);
+  }
+}
+
+console.log(e);
