@@ -111,3 +111,17 @@ for (let i = 0; i < o.length; i++) {
   }
 
   getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
+
+  //Задание 13
+
+  function negativeNumber(t) {
+    const u = [];
+    for (let i = 0; i < t.length; i++) {
+      if (t[i] < 0) {
+        u.push(t[i]);
+      }
+    }
+    console.log(u);
+  }
+
+  negativeNumber([1, -3, 4, -5, -7, 0, -28, 45]);
