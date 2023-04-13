@@ -89,3 +89,12 @@ for (let i = 0; i < o.length; i++) {
     console.log(o[i] + o[i + 1]);
   }
   }
+
+  //Задание 11
+
+  function square(p) {
+    const result = p.map(r => (r ** 2));
+    console.log(result);    
+  }
+
+  square([3, 6, 7, 8]);
