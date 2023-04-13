@@ -67,3 +67,10 @@ if (h.includes(k)) {
   console.log("Такого числа нет");  
 }
 
+//Задание 8
+
+const l = 'abcdef';
+let m = l.split('');
+m.reverse();
+m = m.join('');
+console.log(m);
