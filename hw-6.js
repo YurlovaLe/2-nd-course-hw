@@ -55,3 +55,15 @@ const g = [9, 8, 7, 'a', 6, 5];
 g.sort();
 g.pop();
 console.log(g);
+
+//Задание 7
+
+const h = [9, 8, 7, 6, 5];
+
+let k = Number(prompt('Введи число от 1 до 10'));
+if (h.includes(k)) {
+   console.log("Такое число есть");  
+} else {
+  console.log("Такого числа нет");  
+}
+
