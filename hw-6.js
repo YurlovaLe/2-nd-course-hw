@@ -98,3 +98,16 @@ for (let i = 0; i < o.length; i++) {
   }
 
   square([3, 6, 7, 8]);
+
+  //Задание 12
+
+  function getLengthWords(s) {
+    let t = [];
+    for (let i = 0; i < s.length; i++) {
+      let elementLength = s[i].length;
+      t.push(elementLength);
+    }
+    console.log(t);    
+  }
+
+  getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
