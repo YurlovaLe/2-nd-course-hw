@@ -152,3 +152,17 @@ for (let i = 0; i < o.length; i++) {
 
   console.log(fullArr);
   console.log(evenArr);
+
+  //Задание 15
+
+  let randomArr = [];
+  let sum = 0;
+
+  for (let i = 0; i < 6; i++) {
+    randomArr[i] = Math.floor(Math.random() * 10) + 1;
+    sum += randomArr[i];
+  }
+  
+  let arithMean = sum / randomArr.length;
+  console.log(randomArr);
+  console.log(arithMean);
