@@ -47,3 +47,11 @@ for (let i = 0; i < 3; i++) {
 }
 
 console.log(f);
+
+//Задание 6
+
+const g = [9, 8, 7, 'a', 6, 5];
+
+g.sort();
+g.pop();
+console.log(g);
