@@ -71,6 +71,7 @@ if (h.includes(k)) {
 
 const l = 'abcdef';
 let m = l.split('');
+
 m.reverse();
 m = m.join('');
 console.log(m);
@@ -78,6 +79,11 @@ console.log(m);
 //Задание 9
 
 let n = [[1, 2, 3,], [4, 5, 6]];
+let v = [];
+
+n = n.join(',');
+v = n.split(',');
+console.log(v);
 
 //Задание 10
 
