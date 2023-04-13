@@ -83,11 +83,17 @@ let v = [];
 
 n = n.join(',');
 v = n.split(',');
+
+for (let i = 0; i < v.length; i++) {
+  v[i] = Number(v[i]);
+}
+
 console.log(v);
 
 //Задание 10
 
 o = [1, 3, 4, 6, 7, 9];
+
 for (let i = 0; i < o.length; i++) {
   if (i === o.length - 1) {
     break;
@@ -131,3 +137,18 @@ for (let i = 0; i < o.length; i++) {
   }
 
   negativeNumber([1, -3, 4, -5, -7, 0, -28, 45]);
+
+  //Задание 14
+
+  let fullArr = [];
+  let evenArr = [];
+
+  for (let i = 0; i < 10; i++) {
+    fullArr[i] = Math.floor(Math.random() * 11);
+    if (fullArr[i] % 2 === 0) {
+      evenArr.push(fullArr[i]);
+    }
+  }
+
+  console.log(fullArr);
+  console.log(evenArr);
