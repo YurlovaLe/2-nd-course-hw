@@ -29,7 +29,7 @@ console.log(b);
 let e = [];
 
 for (let j = 0; j < 3; j++) {
-  e[j] = [ ];
+  e[j] = [];
 
   for (let i = 0; i < 3; i++) {
     e[j].push(1);
@@ -62,9 +62,9 @@ const h = [9, 8, 7, 6, 5];
 
 let k = Number(prompt('Введи число от 1 до 10'));
 if (h.includes(k)) {
-   console.log("Такое число есть");  
+  console.log("Такое число есть");
 } else {
-  console.log("Такого числа нет");  
+  console.log("Такого числа нет");
 }
 
 //Задание 8
@@ -74,3 +74,18 @@ let m = l.split('');
 m.reverse();
 m = m.join('');
 console.log(m);
+
+//Задание 9
+
+let n = [[1, 2, 3,], [4, 5, 6]];
+
+//Задание 10
+
+o = [1, 3, 4, 6, 7, 9];
+for (let i = 0; i < o.length; i++) {
+  if (i === o.length - 1) {
+    break;
+  } else {
+    console.log(o[i] + o[i + 1]);
+  }
+  }
