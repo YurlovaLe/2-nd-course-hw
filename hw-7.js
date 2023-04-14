@@ -29,3 +29,15 @@ function random() {
 }
 
 random();
+
+//Задание 6
+
+
+//Задание 7
+
+function randomInRange(min, max) {
+  let e = Math.floor(Math.random() * (max - min)) + min;
+  return e;
+}
+
+randomInRange(-3, 8);
