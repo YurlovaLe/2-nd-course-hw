@@ -77,11 +77,11 @@ console.log(g);
 
 //Задание 10
 
-  function DateInfo(...s) {
+  function DateInfo(...args) {
     const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
   "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    let myDate = new Date(...s);
+    let myDate = new Date(...args);
     let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ".";
     let fullTime = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
     console.log(fullDate);
@@ -89,3 +89,4 @@ console.log(g);
   }
 
   DateInfo(2025, 5, 25, 12, 30, 20, 10);
+
