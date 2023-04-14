@@ -32,6 +32,15 @@ random();
 
 //Задание 6
 
+function getRandomArrNumbers(g) {
+  let k = [];
+  for (let i = 0; i < Math.floor(g / 2); i++) {
+    k[i] = Math.floor(Math.random() * g);
+  }
+  return(k);
+}
+
+getRandomArrNumbers(12);
 
 //Задание 7
 
