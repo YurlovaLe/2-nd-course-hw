@@ -41,3 +41,8 @@ function randomInRange(min, max) {
 }
 
 randomInRange(-3, 8);
+
+//Задание 8
+
+let dateToday = new Date(Date.now());
+console.log(dateToday);
