@@ -5,6 +5,18 @@ str = str.toUpperCase();
 
 //Задание 2
 
+function searchStart(arr,substr) {
+  let newArr = [];
+  arr.forEach(el => {
+    if (el.toLowerCase().startsWith(substr.toLowerCase())) {
+    newArr.push(el);  
+    }
+  });
+  console.log(newArr);
+}
+
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+
 //Задание 3
 
 const a = 32.58884;
