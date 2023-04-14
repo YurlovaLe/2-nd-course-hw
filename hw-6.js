@@ -3,9 +3,10 @@
 const arr = [1, 5, 4, 10, 0, 3];
 
 for (let item of arr) {
-  if (item !== 10) {
-    console.log(item);
-  } else {
+
+  console.log(item);
+
+  if (item === 10) {
     break;
   }
 }
