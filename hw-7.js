@@ -46,3 +46,10 @@ randomInRange(-3, 8);
 
 let dateToday = new Date(Date.now());
 console.log(dateToday);
+
+//Задание 9
+
+let currentDate = new Date();
+let g = new Date(currentDate.setDate(currentDate.getDate() + 73));
+
+console.log(g);
