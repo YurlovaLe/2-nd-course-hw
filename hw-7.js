@@ -21,4 +21,11 @@ let c = Math.min(52, 53, 49, 77, 21, 32);
 console.log(`Наибольшее число ${b}`);
 console.log(`Наименьшее число ${c}`);
 
+//Задание 5
 
+function random() {
+  let d = Math.floor(Math.random() * 10) + 1;
+  return d;
+}
+
+random();
