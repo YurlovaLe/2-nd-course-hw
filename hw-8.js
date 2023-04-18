@@ -60,3 +60,23 @@ each(l,toNumberArr);
 
 let timerId = setInterval(() => console.log(new Date()), 3000);
 setTimeout(() => { clearInterval(timerId); console.log('30 секунд прошло'); }, 30000);
+
+//Задание 5
+
+function calling() {
+  console.log('Звоню!')
+};
+
+function beeps(callbackTalk) {
+  setTimeout(() => {
+      console.log('Идут гудки...');
+      callbackTalk();
+  }, 1000);
+}
+
+function talk() {
+  console.log('Разговор')
+}
+
+calling();
+beeps(talk);
