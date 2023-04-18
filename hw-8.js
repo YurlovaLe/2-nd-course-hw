@@ -56,3 +56,7 @@ function each(j, callbackArr) {
 each(k,reversArr);
 each(l,toNumberArr);
 
+//Задание 4
+
+let timerId = setInterval(() => console.log(new Date()), 3000);
+setTimeout(() => { clearInterval(timerId); console.log('30 секунд прошло'); }, 30000);
