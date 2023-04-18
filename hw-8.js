@@ -36,3 +36,23 @@ function compareUser(a, b) {
 users.sort(compareUser);
 console.log(users);
 
+//Задание 3
+
+const k = [1, '4', 9, 'two'];
+const l = [1, '4', false, 9, 'two'];
+
+function reversArr(g) {
+  return g.reverse();
+}
+
+function toNumberArr(h) {
+  return h.map(Number).filter((element) => !isNaN(element))
+}
+
+function each(j, callbackArr) {
+  return callbackArr(j);
+}
+
+each(k,reversArr);
+each(l,toNumberArr);
+
